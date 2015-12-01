@@ -11,7 +11,7 @@
 
 ?>
 <article>
-	<h2><?php the_title() ?></h2>
+	<h2><?php the_category() ?></h2>
 	<img src="http://placehold.it/555x155">
 	<h1><?php the_title() ?></h1>
 	<p><?php the_content() ?></p>
