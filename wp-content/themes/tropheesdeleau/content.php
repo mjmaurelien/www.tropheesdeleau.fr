@@ -12,9 +12,14 @@
 ?>
 <article>
 	<h2><?php the_category() ?></h2>
-	<img src="http://placehold.it/555x155">
+	<?php the_post_thumbnail('accueil'); ?>
+	<div class="gallery">
+		<?php the_post_thumbnail('gallery'); ?>
+	</div>
 	<h1><?php the_title() ?></h1>
-	<p><?php the_content() ?></p>
+	<?php the_excerpt()?>
+	<a href="<?php the_permalink(); ?>">Lire la suite</a>
+
 	<ul class="social_media">
 		<li><a href="<?php the_permalink(); ?>"><img src="http://placehold.it/18x18"></a></li>
 		<li><a href="<?php the_permalink(); ?>"><img src="http://placehold.it/18x18"></a></li>
