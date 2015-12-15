@@ -16,11 +16,7 @@
 	<?php the_post_thumbnail('accueil'); ?>
 	<?php the_excerpt()?>
 	<a href="<?php the_permalink(); ?>">Lire la suite</a>
-	<ul class="social_media">
-		<li><a href="<?php the_permalink(); ?>"><img src="http://placehold.it/18x18"></a></li>
-		<li><a href="<?php the_permalink(); ?>"><img src="http://placehold.it/18x18"></a></li>
-		<li><a href="<?php the_permalink(); ?>"><img src="http://placehold.it/18x18"></a></li>
-	</ul>
+	<?php echo do_shortcode('[supsystic-social-sharing id="1"]') ?>
 </article>
 
 <?php /*
